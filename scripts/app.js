@@ -1,5 +1,5 @@
 var myApp = angular
-						.module('myModule', ['ngRoute'])
+						.module('myApp', ['ngRoute'])
 						.config(function ($routeProvider) {
 							$routeProvider
 								.when('/home', {

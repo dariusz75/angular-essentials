@@ -18,6 +18,16 @@ var myApp = angular
 									templateUrl: 'templates/setup.html',
 									controller: 'setupController'
 								})
+								.state('module', {
+									url: '/module',
+									templateUrl: 'templates/module.html',
+									controller: 'moduleController'
+								})
+								.state('controller', {
+									url: '/controller',
+									templateUrl: 'templates/controller.html',
+									controller: 'controllerController'
+								})
 
 								//$urlRouterProvider.otherwise('/home');
 						})
@@ -30,11 +40,17 @@ var myApp = angular
 						.controller('setupController', function($scope) {
 							$scope.message = "Message from Setup Controller";
 						})
+						.controller('moduleController', function($scope) {
+							$scope.message = "Message from Module Controller";
+						})
+						.controller('controllerController', function($scope) {
+							$scope.message = "Message from Controller Controller";
+						})
 						.controller('sidebarController', function($scope) {
 							var chapters = [
 															{chapterName: 'Setup', url: 'setup'},
-															{chapterName: 'Module', url: '#'},
-															{chapterName: 'Controller', url: '#'},
+															{chapterName: 'Module', url: 'module'},
+															{chapterName: 'Controller', url: 'controller'},
 															{chapterName: 'src directive', url: '#'},
 															{chapterName: 'Two-way data binding', url: '#'},
 															];

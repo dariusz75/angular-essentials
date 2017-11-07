@@ -20,6 +20,17 @@ var myApp = angular
 							$scope.message = "Home Page";
 						})
 						.controller('nestedController', function($scope) {
-							$scope.message = "Nested Page";
+							$scope.message = "Message from Nested Controller";
+						})
+						.controller('sidebarController', function($scope) {
+							var chapters = [
+															{chapterName: 'Setup'},
+															{chapterName: 'Module'},
+															{chapterName: 'Controller'},
+															{chapterName: 'src directive'},
+															{chapterName: 'Two-way data binding'},
+															];
+
+							$scope.chapters = chapters;
 						})
 

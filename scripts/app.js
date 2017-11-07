@@ -1,33 +1,23 @@
 var myApp = angular
-						.module('myApp', ['ngRoute'])
-						.config(function ($routeProvider) {
-							$routeProvider
-								.when('/home', {
+						.module('myApp', ['ui.router'])
+						.config(function ($stateProvider) {
+							$stateProvider
+								.state('home', {
+									url: '/home',
 									templateUrl: 'templates/home.html',
-									controller: 'homeController'
+									controller: 'homeController',
+									//abstract: true
 								})
-								.when('/courses', {
-									templateUrl: 'templates/courses.html',
-									controller: 'coursesController'
-								})
-								.when('/students', {
-									templateUrl: 'templates/students.html',
-									controller: 'studentsController'
+								.state('home.nested', {
+									url: '/',
+									templateUrl: 'nested.html',
+									controller: 'nestedController'
 								})
 						})
 						.controller('homeController', function($scope) {
 							$scope.message = "Home Page";
 						})
-						.controller('coursesController', function($scope) {
-							$scope.courses = ['HTML', 'CSS', 'JavaScript', 'PHP', 'iOS'];
-						})
-						.controller('studentsController', function($scope) {
-							$scope.students = [
-															{ name: 'Ben', city: 'London', gender: 'Male'},
-															{ name: 'Bill', city: 'Moscow', gender: 'Male' },
-															{ name: 'Josh', city: 'Berlin', gender: 'Male' },
-															{ name: 'Andrew', city: 'Warsaw', gender: 'Male' },
-															{ name: 'John', city: 'Paris', gender: 'Male' }
-															];
+						.controller('nestedController', function($scope) {
+							$scope.message = "Nested Page";
 						})
 

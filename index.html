@@ -31,7 +31,7 @@
       </ul>
       <ul class="list-unstyled components">
         <li ng-repeat="chapter in chapters">
-          <a href="#">{{ chapter.chapterName }}</a>
+          <a ui-sref="{{ chapter.url }}">{{ chapter.chapterName }}</a>
         </li>
       </ul>
     </nav>

@@ -202,3 +202,11 @@ a.article, a.article:hover {
   opacity: 0; }
 .main.ng-enter-active {
   opacity: 1; }
+
+ /* 
+.main.ng-leave {
+  transition: 0.25s;
+  opacity: 1; }
+.main.ng-leave-active {
+  opacity: 0; }
+  */

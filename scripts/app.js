@@ -1,5 +1,5 @@
 var myApp = angular
-						.module('myApp', ['ui.router'])
+						.module('myApp', ['ui.router', 'ngAnimate'])
 						.config(function ($stateProvider, $urlRouterProvider) {
 							$stateProvider
 								.state('home', {

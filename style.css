@@ -191,3 +191,14 @@ a.article, a.article:hover {
 .view-fade-in.ng-leave {
   opacity: 0;
 }
+
+
+/* ------------------------------------------
+    ng-animate
+--------------------------------------------- */
+
+.main.ng-enter {
+  transition: 0.25s;
+  opacity: 0; }
+.main.ng-enter-active {
+  opacity: 1; }

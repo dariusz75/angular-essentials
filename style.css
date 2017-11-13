@@ -212,3 +212,21 @@ a.article, a.article:hover {
   */
 
   
+  /* ----------------------------------------
+        general styles
+------------------------------------------ */
+.no-padding {
+    padding: 0;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+#demo {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0px;
+}

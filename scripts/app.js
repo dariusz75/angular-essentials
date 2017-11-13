@@ -112,7 +112,6 @@ var myApp = angular
 						})
 						.controller('sidebarController', function($scope) {
 							var chapters = [
-															{chapterName: 'Setup', url: 'setup'},
 															{chapterName: 'Module', url: 'module'},
 															{chapterName: 'Controller', url: 'controller'},
 															{chapterName: 'src directive', url: 'src-directive'},

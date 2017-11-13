@@ -1,10 +1,23 @@
 <div>
-	<h2>Module page.</h2>
-	<p>{{ message }}</p>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">CODE EXAMPLE</button>
+	<h2>Module.</h2>
+	<p>A module is a collection of services, directives, controllers, filters, and configuration information.</p>
+	<h4>How to create a module</h4>
+	<p>To create Angular module we need to use module() method.</p>
+	<figure>
+		<pre class="line-numbers padding-left">
+			<code class="language-javascript">
+var myApp = angular.module('myModule', []);</code>
+		</pre>
+	</figure>
+	<p>The angular.module comes from the framework.<br></p>
+	<p>The first parameter in module() specifies the name for the module we are creating.<br></p>
+	<p>The second parameter is an array with all dependencies our module requires.<br></p>
+	<p>If tere are no dependencies the array stays empty.</p>
+	
+	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">CODE EXAMPLE</button>
   <div id="demo" class="collapse">
     <figure>
-		  <pre class='line-numbers'>
+		  <pre class="line-numbers">
 		    <code class="language-javascript">
 		     var myApp = angular
 								.module('myApp', ['ui.router'])
@@ -20,21 +33,6 @@
 											url: '/nested',
 											templateUrl: 'templates/nested.html',
 											controller: 'nestedController'
-										})
-										.state('setup', {
-											url: '/setup',
-											templateUrl: 'templates/setup.html',
-											controller: 'setupController'
-										})
-										.state('module', {
-											url: '/module',
-											templateUrl: 'templates/module.html',
-											controller: 'moduleController'
-										})
-										.state('controller', {
-											url: '/controller',
-											templateUrl: 'templates/controller.html',
-											controller: 'controllerController'
 										})
 
 										//$urlRouterProvider.otherwise('/home');

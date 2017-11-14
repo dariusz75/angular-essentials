@@ -10,7 +10,7 @@
 			The scope is an object with the available properties and methods. <br>
 			The scope is available for both the view and the controller.</p>
 	<figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-javascript">
 var myController = function ($scope) {
 
@@ -31,7 +31,7 @@ var myController = function ($scope) {
 	</p>
 	
 	<figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-javascript">
 myApp.controller('myRegisteredController', myController);
 			</code>
@@ -45,7 +45,7 @@ myApp.controller('myRegisteredController', myController);
 	</p>
 
 <figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-markup">
 &lt;html ng-app="myModule"&gt;
 			</code>
@@ -58,7 +58,7 @@ myApp.controller('myRegisteredController', myController);
 	</p>
 
 	<figure>
-			<pre class="line-numbers padding-left">
+			<pre class="line-numbers padding-left" ng-prism>
 				<code class="language-html">
 &lt;body ng-controller="myRegisteredController"&gt;
 				</code>
@@ -73,7 +73,7 @@ myApp.controller('myRegisteredController', myController);
 	</p>
 
 	<figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-javascript">
 &lt;div&gt;{{ message }}&lt;/div&gt;
 			</code>
@@ -87,7 +87,7 @@ myApp.controller('myRegisteredController', myController);
 	</p>
 
 	<figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-javascript">
 var myController = function ($scope) {
 	$scope.message = 'Angular Tutorial';
@@ -102,7 +102,7 @@ myApp.controller('registeredController', myController);
 	<p>We can do this</p>
 
 	<figure>
-		<pre class="line-numbers padding-left">
+		<pre class="line-numbers padding-left" ng-prism>
 			<code class="language-javascript">
 myApp.controller('registeredController', function ($scope) {
 	$scope.message = 'Angular Tutorial Start';

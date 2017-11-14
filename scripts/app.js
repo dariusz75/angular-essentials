@@ -134,4 +134,12 @@ var myApp = angular
 
 							$scope.chapters = chapters;
 						})
+						.directive('ngPrism', function() {
+					    return {
+					        restrict: 'A',
+					        link: function(scope, element, attrs) {
+					            Prism.highlightElement(element.find('code')[0]);
+					        }
+					    }
+						})
 

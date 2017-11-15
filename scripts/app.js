@@ -59,7 +59,8 @@ var myApp = angular
 								})
 								.state('data-sorting-by-search-filter', {
 									url: '/data-sorting-by-search-filter',
-									templateUrl: 'templates/data-sorting-by-search-filter.html'
+									templateUrl: 'templates/data-sorting-by-search-filter.html',
+									controller: 'dataSortingController'
 								})
 								.state('data-sorting-by-multiple-properties', {
 									url: '/data-sorting-by-multiple-properties',

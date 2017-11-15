@@ -74,7 +74,8 @@ var myApp = angular
 								})
 								.state('ng-include-directive', {
 									url: '/ng-include-directive',
-									templateUrl: 'templates/ng-include-directive.html'
+									templateUrl: 'templates/ng-include-directive.html',
+									controller: 'filtersController'
 								})
 								.state('services', {
 									url: '/services',
@@ -260,6 +261,9 @@ var myApp = angular
 
 										$scope.employees = employees;
 										$scope.rowLimit = 2;
+										$scope.employeeTable = 'components/employee-table.html';
+										$scope.employeeList = '../components/employee-list.html';
+										$scope.defaultDisplay = '../components/employee-table.html';
 						})
 						.controller('dataSortingController', function($scope) {
 							var employees = [

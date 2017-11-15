@@ -72,10 +72,6 @@ var myApp = angular
 									templateUrl: 'templates/ng-hide-and-ng-show-directives.html',
 									controller: 'filtersController'
 								})
-								.state('ng-init-directive', {
-									url: '/ng-init-directive',
-									templateUrl: 'templates/ng-init-directive.html'
-								})
 								.state('ng-include-directive', {
 									url: '/ng-include-directive',
 									templateUrl: 'templates/ng-include-directive.html'
@@ -316,7 +312,6 @@ var myApp = angular
 															{chapterName: 'Data sorting by search filter', url: 'data-sorting-by-search-filter'},
 															{chapterName: 'Data sorting by multiple properties', url: 'data-sorting-by-multiple-properties'},
 															{chapterName: 'ng-hide and ng-show directives', url: 'ng-hide-and-ng-show-directives'},
-															{chapterName: 'ng init directive', url: 'ng-init-directive'},
 															{chapterName: 'ng-include-directive', url: 'ng-include-directive'},
 															{chapterName: 'Services', url: 'services'},
 															{chapterName: 'Services separated', url: 'services-separated'},

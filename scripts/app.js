@@ -30,7 +30,8 @@ var myApp = angular
 								})
 								.state('src-directive', {
 									url: '/src-directive',
-									templateUrl: 'templates/src-directive.html'
+									templateUrl: 'templates/src-directive.html',
+									controller: 'srcDirectiveController'
 								})
 								.state('two-way-databinding', {
 									url: '/two-way-databinding',
@@ -109,6 +110,13 @@ var myApp = angular
 						})
 						.controller('controllerController', function($scope) {
 							$scope.message = "Message from Controller Controller";
+						})
+						.controller('srcDirectiveController', function($scope) {
+							var country = {
+										flag: './img/GB.png'
+									};
+
+							$scope.country = country;
 						})
 						.controller('sidebarController', function($scope) {
 							var chapters = [

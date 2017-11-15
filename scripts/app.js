@@ -123,7 +123,7 @@ var myApp = angular
 															{chapterName: 'Module', url: 'module'},
 															{chapterName: 'Controller', url: 'controller'},
 															{chapterName: 'src directive', url: 'src-directive'},
-															{chapterName: 'Two-way data binding', url: 'two-way-databinding'},
+															{chapterName: 'Data binding', url: 'two-way-databinding'},
 															{chapterName: 'ng-repeat-directive', url: 'ng-repeat-directive'},
 															{chapterName: 'Events Handling', url: 'events-handling'},
 															{chapterName: 'Filters', url: 'filters'},

@@ -69,7 +69,8 @@ var myApp = angular
 								})
 								.state('ng-hide-and-ng-show-directives', {
 									url: '/ng-hide-and-ng-show-directives',
-									templateUrl: 'templates/ng-hide-and-ng-show-directives.html'
+									templateUrl: 'templates/ng-hide-and-ng-show-directives.html',
+									controller: 'filtersController'
 								})
 								.state('ng-init-directive', {
 									url: '/ng-init-directive',

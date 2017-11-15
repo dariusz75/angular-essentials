@@ -44,7 +44,8 @@ var myApp = angular
 								})
 								.state('events-handling', {
 									url: '/events-handling',
-									templateUrl: 'templates/events-handling.html'
+									templateUrl: 'templates/events-handling.html',
+									controller: 'eventsHandlingController'
 								})
 								.state('filters', {
 									url: '/filters',
@@ -159,6 +160,41 @@ var myApp = angular
 
 																					$scope.employees = employees;
 																					$scope.countries = countries;
+						})
+						.controller('eventsHandlingController', function($scope) {
+							var technologies = [
+																						{
+																							name: 'HTML5', 
+																							likes: 0, 
+																							dislikes: 0
+																						},
+																						{
+																							name: 'CSS3', 
+																							likes: 0, 
+																							dislikes: 0
+																						},
+																						{
+																							name: 'JavaScript', 
+																							likes: 0, 
+																							dislikes: 0
+																						},
+																						{
+																							name: 'PHP', 
+																							likes: 0, 
+																							dislikes: 0
+																						},
+
+																					];
+
+																					$scope.technologies = technologies;
+
+																					$scope.incrementLikes = function (technology) {
+																						technology.likes++
+																					};
+
+																					$scope.incrementDislikes = function (technology) {
+																						technology.dislikes++
+																					};
 						})
 						.controller('sidebarController', function($scope) {
 							var chapters = [

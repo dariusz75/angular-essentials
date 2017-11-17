@@ -84,7 +84,8 @@ var myApp = angular
 								})
 								.state('services-separated', {
 									url: '/services-separated',
-									templateUrl: 'templates/services-separated.html'
+									templateUrl: 'templates/services-separated.html',
+									controller: 'servicesSeparatedContorller'
 								})
 								.state('anchorscroll-service', {
 									url: '/anchorscroll-service',
@@ -349,6 +350,14 @@ var myApp = angular
 																									}
 								
 						})
+						.controller('servicesSeparatedContorller', function ($scope, stringService) {
+												
+												$scope.putSpaces = function (input) {
+														
+													$scope.output = stringService.processString(input);
+
+												}
+											})
 						.directive('ngPrism', function() {
 					    return {
 					        restrict: 'A',

@@ -79,7 +79,8 @@ var myApp = angular
 								})
 								.state('services', {
 									url: '/services',
-									templateUrl: 'templates/services.html'
+									templateUrl: 'templates/services.html',
+									controller: 'servicesController'
 								})
 								.state('services-separated', {
 									url: '/services-separated',
@@ -325,6 +326,28 @@ var myApp = angular
 															];
 
 							$scope.chapters = chapters;
+						})
+						.controller('servicesController', function($scope) {
+							
+							$scope.transformString = function (input) {
+																																		
+																																		var output = '';
+
+																																		if (!input) {
+																																			return input;
+																																		} 
+
+																																		for (var i = 0; i < input.length; i++) {
+																																			if (i > 0 && input[i] === input[i].toUpperCase()) {
+																																				output = output + ' ';
+																																			} 
+																																				output = output + input[i];															
+																																		}
+																																			
+																																		$scope.output = output;
+																																		
+																									}
+								
 						})
 						.directive('ngPrism', function() {
 					    return {
